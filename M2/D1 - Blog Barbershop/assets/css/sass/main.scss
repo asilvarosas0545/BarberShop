@@ -1,0 +1,20 @@
+// main.css
+// Manifest
+
+//Asbtracts
+@import 'abstract/variables';
+//Vendors
+//Base
+@import 'base/typography';
+//Layout
+@import "layouts/navigation",
+        "layouts/header",
+        "layouts/main_blog",
+        "layouts/about",
+        "layouts/control_pages",
+        "layouts/footer";
+//Components
+@import "components/buttons";
+//Pages
+@import "page/index";
+//Theme
