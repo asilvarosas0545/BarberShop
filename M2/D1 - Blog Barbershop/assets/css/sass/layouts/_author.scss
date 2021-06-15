@@ -1,0 +1,22 @@
+//Layouts - Author
+.author{
+  background-color: $colors-white;
+  &__description{
+    color: $colors-nickel;
+    font-size: $font-size-large;
+    line-height: 300%;
+  };
+  &__img-small{
+    width: 15em;
+  }
+  &__rrss{
+    &--a-primary{
+      font-size: $font-size-x-large;
+      color: $colors-spanish-pink;
+      text-decoration: unset;
+      &:hover{
+        color: $colors-nickel;
+      }
+    }
+  }
+}

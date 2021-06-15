@@ -1,0 +1,10 @@
+//layout - main blog
+.main-blog{
+  font-family: $font-roboto;
+  color: $colors-nickel;
+  font-size: $font-size-large;
+  line-height: 300%;
+  &__title{
+    font-family: $font-playfair;
+  }
+}

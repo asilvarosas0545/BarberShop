@@ -1,0 +1,7 @@
+.main-blog__button{
+  background-color: $colors-nickel;
+  color: $colors-white;
+  &:hover{
+    background-color: $colors-light-gray;
+  }
+}

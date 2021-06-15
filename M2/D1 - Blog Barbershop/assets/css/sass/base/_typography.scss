@@ -1,3 +1,11 @@
+h1,h2{
+  font-family: $font-playfair;
+  font-weight: $font-weight-base;
+  font-style: $font-style-playfair;
+}
 h1{
-
+  font-size: $font-size-xx-large;
+}
+h2{
+  font-size: $font-size-x-large;
 }

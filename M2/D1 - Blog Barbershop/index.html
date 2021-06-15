@@ -22,10 +22,10 @@
 </head>
 <body>
 <!-- Navegador / SmoothScrol -->
-<nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top text-center m-auto w-100 fw-bolder fs-5">
+<nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark text-center px-5 m-auto w-100 fs-5">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="assets/img/logo.png" alt="Logo" class="d-inline-block align-text-top"/>
+            <img src="assets/img/logo.png" alt="Logo" class="d-inline-block align-text-top navbar__img-small"/>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -53,53 +53,76 @@
     </div>
 </nav>
 <!-- Encabezado / Carousel -->
-<header id="header" class="header text-white">
-    <div class="header_text container">
-        <h1>5 formas de cuidar tu corte de cabello</h1>
+<header id="header" class="header d-flex flex-column">
+    <div class="container px-5 m-auto justify-content-center">
+        <h1 class="header__text m-auto px-5 text-center">5 formas de cuidar tu corte de cabello</h1>
     </div>
-    <a class="btn btn-outline align-text-bottom" href="#main">
-        <i class="fas fa-angle-double-down"></i>
+    <a class="header__link btn btn-outline justify-content-center mb-5" href="#main">
+        <i class="fas fa-angle-double-down fs-1 text-white"></i>
     </a>
 </header>
-<article id="main_blog" class="main_blog">
-    <h3 class="main_blog-title">12 de abril 2018</h3>
-    <p class="main_blog-parrafo">
+<article id="main-blog" class="main-blog p-5 m-5">
+    <h3 class="main-blog__title pb-3">12 de abril 2018</h3>
+    <p class="main-blog__parrafo">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse feugiat nunc quam, eget scelerisque quam semper quis. Mauris maximus blandit lorem, sit amet condimentum eros auctor quis. In ut semper ipsum, nec condimentum est. Phasellus sodales, nunc vitae feugiat consequat, turpis velit euismod mi, eget scelerisque felis odio nec tortor. Ut nibh ex, tincidunt eu faucibus vel, sollicitudin ut velit.
-
+        </p><p class="main-blog__parrafo">
         Fusce dapibus turpis massa, nec pellentesque libero porttitor eu. Fusce vel pellentesque augue. Cras finibus elit nec nisl vehicula, in interdum dolor volutpat. Duis arcu odio, aliquet non sapien vitae, scelerisque aliquam lorem. Suspendisse et sem tincidunt, tincidunt odio id, varius enim. Vestibulum faucibus augue id fringilla vulputate. Sed vitae magna eu enim pellentesque laoreet. Pellentesque id molestie eros. Nunc quam nisi, efficitur in scelerisque eu, lacinia vel erat.
-
+</p><p class="main-blog__parrafo">
         Suspendisse vel lobortis lectus, eu convallis mauris. Praesent id odio imperdiet, tincidunt ex a, aliquam libero. Duis ultricies nisi nulla, eget cursus nibh interdum tempus. Integer sodales tincidunt imperdiet. Aenean ornare at tortor sed facilisis. Nulla gravida turpis ac ullamcorper iaculis. Cras fringilla felis id nibh efficitur ornare. Aenean accumsan orci sit amet semper eleifend.
-
+</p><p class="main-blog__parrafo">
         Proin quis tortor ante. Cras fermentum urna a felis placerat, eget malesuada ipsum placerat. Fusce scelerisque, leo quis auctor lacinia, mauris justo porta enim, eget dictum nisi sapien eget ex.
-
+</p><p class="main-blog__parrafo">
         Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus vehicula non. Praesent tincidunt convallis ipsum, quis convallis metus. Vivamus ac gravida lectus, eget ultricies nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam tristique pulvinar est at tristique. Vestibulum non blandit ex. Suspendisse ipsum justo, feugiat eu feugiat et, condimentum sit amet ipsum. Pellentesque eu vulputate dolor. Aliquam pretium arcu nec aliquet varius.
     </p>
-    <div class="container main_blog-buttons_container">
-        <button class="main_blog-button">Compartir</button>
-        <button class="main_blog-button">Comentar en Twitter</button>
+    <div class="container my-5 text-right ms-0">
+        <button class="main-blog__button btn rounded-pill">Compartir</button>
+        <button class="main-blog__button btn rounded-pill">Comentar en Twitter</button>
     </div>
 </article>
-<section id="about" class="about">
-    <div class="container">
+<hr>
+<section id="author" class="about p-5 m-5">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2">
-                <img src="assets/img/naomi-thai.png" alt="portrait_logo">
+            <div class="col-md-6 col-lg-3 text-center align-middle">
+                <img class="rounded-circle author__img-small border border-light" src="assets/img/naomi-thai.png" alt="portrait_logo">
             </div>
-            <div class="col-md-3">
-                <span class="About_Title">Naomi Thai</span>
-                <span class="About_Title">Naomi Thai</span>
+            <div class="col-md-6 col-lg 4 text-center my-auto">
+                <h2 class="author__title">Naomi Thai</h2>
+                <a class="author__rrss--a-primary" href="https://instragram.com/naothai">@Naothai</a><br>
+                <a class="author__rrss--a-primary" href="https://depelos.com">depelos.com</a>
             </div>
-            <div class="col-md-6">
-
+            <div class="col-lg-6 d-none d-lg-block my-auto">
+                <span class="author__description">Fusce in eros purus. Fusce volutpat nisi purus, ac vehicula ipsum sollicitudin in. Praesent ultrices semper massa, eu pellentesque purus vehicula non. Praesent tincidunt convallis ipsum, quis convallis metus.</span>
             </div>
         </div>
     </div>
 </section>
-<section id="control_pages" class="control_pages">
-
+<section id="control-pages" class="control-pages p-5">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination pagination-lg justify-content-center mb-0 control-pages__nav">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Siguiente</a>
+            </li>
+        </ul>
+    </nav>
 </section>
-<footer id="footer" class="footer">
-    <img src="assets/img/logo.png" alt="main_logo">
+<footer id="footer" class="footer text-center">
+    <img class="footer__img-small m-5" src="assets/img/logo.png" alt="main_logo">
 </footer>
+<!-- JQuery 3.6.0 -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<!--Popper-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+<!--Bootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
 </body>
 </html>

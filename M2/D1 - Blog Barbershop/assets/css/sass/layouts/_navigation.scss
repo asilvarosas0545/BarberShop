@@ -1,0 +1,12 @@
+//layout navigation
+.navbar{
+  &__img-small{
+    width: 5em;
+  }
+}
+.nav-link.active{
+    color: $colors-spanish-pink !important;
+  &:hover{
+    color:$colors-light-gray !important;
+  }
+}

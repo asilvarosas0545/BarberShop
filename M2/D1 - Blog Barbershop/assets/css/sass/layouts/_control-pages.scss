@@ -1,0 +1,31 @@
+//layout - control pages
+.control-pages{
+  background-color: $colors-light-gray;
+  &__nav{
+    background-color: transparent;
+  }
+}
+.page-link{
+  color: $colors-raisin-black;
+  &:hover{
+    color: $colors-raisin-black;
+  }
+}
+.pagination-lg .page-item:first-child .page-link {
+  border-top-left-radius: 5rem;
+  border-bottom-left-radius: 5rem;
+}
+.pagination-lg .page-item:last-child .page-link {
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+.page-item.active .page-link {
+  background-color: $colors-eerie-black;
+  border-color: $colors-platinum;
+}
+@media (min-width: 992px) {
+  .page-item.active .page-link {
+    background-color: $colors-nickel;
+    border-color: $colors-platinum;
+  }
+}
